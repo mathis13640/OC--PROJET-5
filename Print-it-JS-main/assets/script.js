@@ -21,6 +21,7 @@ const slides = [
 	const leftArrow = document.querySelector(".arrow_left");
 	const rightArrow = document.querySelector(".arrow_right");
 	const containerDot = document.querySelector(".dots");
+	const images = document.querySelector('.banner-img');
 
 
 	// Ajout d'un clic gauche sur flèche ///
@@ -41,10 +42,9 @@ const slides = [
 		//ajout element enfant à parent//
 		containerDot.appendChild(dot);
 	}
-	//select element de la page possédant la classe css DOT 
+
+	//select tout les élements de la page possédant la classe dot// 
 	const dots = document.querySelectorAll(".dot");
+	//ajout de la classe dot_selected au premier élément//
 	dots[0].classList.add('dot_selected');
-	
-
-
 
