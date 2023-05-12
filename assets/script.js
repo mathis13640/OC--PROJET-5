@@ -50,7 +50,7 @@ const slides = [
   arrowLeft.addEventListener("click", () => {
 	count--;
 	if (count < 0) {
-		count = 4;
+		count = slidesLength - 1;
 	}
 	updateSlide();
   });
@@ -58,9 +58,9 @@ const slides = [
   // Ajout d'un événement clic sur la flèche droite
   arrowRight.addEventListener("click", () => {
 	count++;
-	if (count > 4) {
+	if (count > slidesLength - 1) {
 		count = 0;
-	}	
+		}	
 	updateSlide();
   });
   
